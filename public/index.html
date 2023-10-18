@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="scripts.js"></script>
+    
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +40,339 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body style="font-family: 'Space Grotesk', sans-serif; ">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo"><img src="qq.png" style="height: 70px;" alt=""></a>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+  </header>
+  <!-- Home -->
+
+  <section class="home" id="home">
+      <div class="social">
+          <a href="#"><i class='bx bxl-github'></i></a>
+          
+          <a href="#"><i class='bx bxl-dribbble' ></i></a>
+          <a href="#"><i class='bx bxl-behance' ></i></a>
+      </div>
+      <div class="home-img">
+          <img src="qq.png" alt="" height="300px">
+      </div>
+      <div class="home-text">
+          <h1>Responsive Website</h1>
+          <p>Buillding Dream Website With Great Expertis and <br />Extreme Extensive Experience For The Best Mobile And <br />    Desktop Experince.</p>
+          <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+  </section>
+  <!-- About -->
+  <section>
+    
+      <!-- About Content -->
+    
+          <div class="about-text">
+            <div className="">
+              <div className="logo23">
+                  <span id="arr">What We <br /> Offer <BsArrowRight /> </span>
+              </div>
+              <div className="container" id="font1" >
+                  <span id='arr' style="font-size: 3.5rem;" >Complete Software</span><br>
+                  <span id='arr' style="font-size: 3rem;">Development And Digital</span><br>
+                  <span id='arr' style="font-size: 3.5rem;">Marketing Solution</span><br />
+              </div> <br>
+              <div className="container description" id="pp">
+                  <p data-aos="fade-down-top" style="font-size:x-large;">We Offer A Complete Software And Digital Marketing Solution Bespoke To The
+                      Needs Of Your Business. From Ideation To Creation And Implementation Of
+                      Solutions That Are Tailored To Meet Your Requirements, With Services Such
+                      As Ecommerce Website Designing Services. Complete Mobile Application
+                      Development, Digital Marketing Solutions, As Well As Web Design
+                      And Development. We Are Your One-Stop Shop For All Your IT And Digital
+                      Marketing Needs.
+                      Our Team Is Studded With Well-Experienced And Passionate Web Designers,
+                      Mobile Application Developers, Web Developers, Graphic Designers, Content
+                      Writers, As Well As Well-Experienced Digital Marketers, That Are Committed
+                      To Offering Best-In-Class Service That Is Result-Oriented.</p>
+
+              </div>
+              <br />
+              <br />
+              <br />
+          </div>
+               </div>
+      </div>
+  </section>
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+    </div>
+    <div class="row">
+    <div class="card col-6">
+      <div class="card-body">
+        <p class="card-text">webside <br> Design</p>
+      </div>
+    </div>
+    <div class="card col-6">
+      <div class="card-body" style="margin-top: 17%;">
+        <p  style="font-size: larger;">We Develop A Website That Conforms To The Needs Of Your Business.
+          With in-depth and diligent development, we materialize the ideas that you have in your mind, to create technological solutions that are a class apart from the rest.
+        </p>
+        <button className="btn btn-primary" 
+        style="
+          color: #fbfcfd;
+          padding:10px 25px;
+          background:cadetblue;
+          border-radius: 20px;
+          outline: none;
+          cursor: pointer; ">
+          Start Development
+        </button>
+      </div>
+    </div>
+    <div class="card col-6" >
+      <div class="card-body">
+        <p class="card-text">ECommerce <br> Solution</p>
+      </div>
+    </div>
+    <div class="card col-6">
+      <div class="card-body">
+        <p class="card-text">Digital <br /> Marketing</p>
+      </div>
+    </div>
+    <div class="card col-6">
+      <div class="card-body">
+        <p class="card-text">Mobile <br> Application</p>
+      </div>
+    </div>
+    <div class="card col-6">
+      <div class="card-body">
+        <p class="card-text">Multimedia <br> Solutions</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <button class='original-button' style="margin-left: 10%;">GET START <br />YOUR <br />PROJECT</button><br>
+  <section  class="Project" id="Project">
+  <div className="row">
+    <div className='container-fluid'>
+    <div class='container-fluid' id='get'>
+      
+      <span id='v' style="color: dimgrey; float:right;margin-top: -15%;">Let's Discuss Your <br> Project</span>
+      <h6 class='pro' style="font-size: xx-large; margin-top: 0%; float: right;">Get Free Consultation And Let Us Know Your <br />
+        Project Idea To Trun It Into An Amazing Digital <br />
+        Product.</h6>
+        </div> 
+    </div>
+  </section>
+  
+  <section class="About" id="about">
+    <div class="heading">
+      <h2>About</h2>
+      <span>About us</span>
+  </div>
+  <div className='logo2'>
+    <span class='aa'>About <br />Us <BsArrowRight/></span> 
+   
+    <div class='grow'>
+        <span id='v'>Grow Your Business <br /> With Our Agency</span>
+        </div>
+        <div class="ppp">
+          <p>We Are Your One-Stop-Shop For All Your Software Development And Digital <br /> Marketing Needs. We At Quintus Tech Specialize In Designing,  <br /> Developing, And Deploying Best-In-Class Websites And Mobile Software Solutions That  <br />Are Bespoke To Your Needs.  <br /><br /> We Provide The Express Solution For All Your Ecommerce Needs With <br /> Limitless Integrations And Customizability, So That You Can Cater To All Kinds <br />Of Customers With All Kinds Of Products. With Our Express Mobile <br /> Development Solutions, You Can Get Your Business On The Mobile Phones Of <br /> Millions Of Users, Allowing Your Business To Grow Exponentially. With  <br />Complete Software And Digital Marketing Solutions, We Conform To Your  <br />Needs And Materialise A Solution That Is Ahead Of The Curve.</p>
+        </div>
+      </div> 
+  </section>
+  <section class="project" id="project">
+    <div class="heading">
+      <h2>Projects</h2>
+      <span>our projects<span>
+  </div>
+  <div class='logo2'>
+    <span class='aa'>Our  <BsArrowRight /><br />Projects</span>
+    <span class='some'>Some Of Our <br /> Featured Works</span><br /><br /><br /><br />
+  </div>
+  </section>
+  <div class="slider" style= " margin-top: 5%">
+    <div class="slide-track" style="background-color:#444242;">
+      <div class="slide">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 3.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 2.png" alt="" />
+      </div>
+      <div class="slide ">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 3.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 3.png"  alt=""/>
+      </div>
+      <div class="slide">
+        <img src="Rectangle 1.png"  alt="" />
+      </div>
+      <div class="slide">
+        <img src="Rectangle 2.png" alt="" />
+      </div>
+
+    </div>
+  </div>  
+  <section class="Faq" id="faq">
+    <div class="heading">
+      <h2>FAQ</h2>
+  </div>
+  <div class="faq-section">
+    
+    <details>
+      <summary>
+        <h4>Why is Raycast free for personal use?</h4>
+        <span class="material-symbols-outlined">expand_more</span>  
+      </summary>
+      <p>We think of Raycast as a productivity layer that everybody should use to get work done faster. To make it accessible, we don't charge for the individual plan. The plan covers all built-in extensions, such as Clipboard History, Calendar or Window Management and provides access to all public extensions built by our community.</p>
+    </details>
+    
+    <hr>
+    
+    <details>
+      <summary>
+        <h4>When is Raycast for teams available?</h4>
+        <span class="material-symbols-outlined">expand_more</span>  
+      </summary>
+      <p>We don't have an exact date right now, but we will launch Raycast for Teams in 2022. You can sign up to get early access above, and be the first to hear when we're launching it.</p>
+    </details> 
+    
+    <hr>
+    
+    <details>
+      <summary>
+        <h4>How many seats do I get in a Team plan?</h4>
+        <span class="material-symbols-outlined">expand_more</span>  
+      </summary>
+      <p>We don't have an exact date right now, but we will launch Raycast for Teams in 2022. You can sign up to get early access above, and be the first to hear when we're launching it.</p>
+    </details>
+    
+    <hr>
+    
+    <details>
+      <summary>
+        <h4>Can I have personal Extensions and Team Extensions?</h4>
+        <span class="material-symbols-outlined">expand_more</span>  
+      </summary>
+      <p>Yes, you can create personal Extensions that are personalized to you, and speed up your productivity, and have team Extensions that can be shared around in your organization for everyone to use. Team Extensions will be available in the Store command, behind a filter for your Team. This is where all of your Team Extensions will live, and where you can install them.</p>
+    </details>
+    
+    <hr>
+    
+    <details>
+      <summary>
+        <h4>How much will Team features cost?</h4>
+        <span class="material-symbols-outlined">expand_more</span>  
+      </summary>
+      <p>Team features will cost $10 per user, per month.</p>
+    </details>
+    
+  </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="heading">
+      <h2>Contact </h2>
+      <span>contact us page<span>
+  </div>
+  </section>
+  <form class="my-form">
+    <div class="container">
+      <h1>Contect Us!</h1>
+      <ul>
+        <li>
+          <select>
+            <option selected disabled>-- Please choose an option --</option>
+            <option>Request Quote</option>
+            <option>Send Resume</option>
+            <option>Other</option>      
+          </select>
+        </li>
+        <li>
+          <div class="grid grid-2">
+            <input type="text" placeholder="Name" required>  
+            <input type="text" placeholder="Surname" required>
+          </div>
+        </li>
+        <li>
+          <div class="grid grid-2">
+            <input type="email" placeholder="Email" required>  
+            <input type="tel" placeholder="Phone">
+          </div>
+        </li>    
+        <li>
+          <textarea placeholder="Message"></textarea>
+        </li>   
+        <li>
+          <input type="checkbox" id="terms">
+          <label for="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
+        </li>  
+        <li>
+          <div class="grid grid-3">
+            <div class="required-msg">REQUIRED FIELDS</div>
+            <button class="btn-grid" type="submit" disabled>
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+              </span>
+              <span class="front">SUBMIT</span>
+            </button>
+            <button class="btn-grid" type="reset" disabled>
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+              </span>
+              <span class="front">RESET</span>
+            </button> 
+          </div>
+        </li>    
+      </ul>
+    </div>
+  </form>
+  <footer>
+    <div class="container">
+      <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">Quintus Tech</a>
+      </small>
+    </div>
+  </footer>
   </body>
 </html>
